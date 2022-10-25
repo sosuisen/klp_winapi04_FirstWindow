@@ -41,9 +41,6 @@ int APIENTRY wWinMain(HINSTANCE hInstance,
     // ウィンドウを表示
     ShowWindow(hwnd, nCmdShow);
 
-    // ウィンドウを再描画
-    UpdateWindow(hwnd);
-
     MessageBox(hwnd, L"ウィンドウを生成しました。", L"", MB_OK);
 
     while (GetMessage(&msg, NULL, 0, 0) > 0) {
